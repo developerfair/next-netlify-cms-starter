@@ -1,30 +1,23 @@
 import Head from "next/head";
+import { attributes } from "../content/index.md";
 
 export default function Home() {
+  const { header, hero } = attributes;
+  console.log(attributes);
+  debugger;
+
   return (
     <div className="p-4">
       <Head>
-        <title>devfair client cms</title>
+        <title>{header.title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
-        <h1 className="text-6xl">
-          Welcome to <a href="https://devfair.com">devfair client cms!</a>
-        </h1>
+        <h1 className="text-6xl">{hero.heading}</h1>
 
-        <p className="mt-0 mb-4 text-gray-600">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <p className="mt-0 mb-4 text-gray-600">{hero.detail}</p>
       </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        ></a>
-      </footer>
     </div>
   );
 }
