@@ -10,7 +10,7 @@ export default function Home() {
 
       <main>
         <h1 className="text-6xl">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="https://devfair.com">devfair client cms!</a>
         </h1>
 
         <p className="mt-0 mb-4 text-gray-600">
