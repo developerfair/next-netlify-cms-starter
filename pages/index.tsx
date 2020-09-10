@@ -1,16 +1,16 @@
 import Head from "next/head";
 import { attributes } from "../content/index.md";
 
-export default function Home() {
+export default function Index() {
   const { header, hero } = attributes;
-  console.log(attributes);
-  debugger;
 
   return (
     <div className="p-4">
       <Head>
         <title>{header.title}</title>
+        <meta name="description" content={header.description} />
         <link rel="icon" href="/favicon.ico" />
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" />
       </Head>
 
       <main>
