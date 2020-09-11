@@ -3,9 +3,10 @@ import { Layout } from "../components/Layout";
 import React from "react";
 import { Markdown } from "../components/Markdown";
 
-export default function Index() {
-  const { hero } = attributes;
-
+type Props = {
+  hero: any;
+};
+export default function Index({ hero = attributes.hero }: Props) {
   return (
     <Layout>
       <div className="mt-8 ml-8 lg:grid lg:grid-cols-12 lg:gap-8">
