@@ -9,6 +9,7 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "markdown-to-jsx": "^7.0.0",
     "netlify-cms-app": "^2.12.20",
     "next": "9.5.3",
     "react": "16.13.1",

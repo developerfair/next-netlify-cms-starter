@@ -12,19 +12,11 @@ collections:
         name: "index"
         file: "content/index.md"
         fields:
-          - label: "Header"
-            name: "header"
-            widget: "object"
-            collapsed: false
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "string" }
-              - { label: "Logo", name: "logo", widget: "image", default: "/images/devfair-logo.svg" }
           - label: "Hero"
             name: "hero"
             widget: "object"
             collapsed: false
             fields:
-              - { label: "Heading", name: "heading", widget: "string" }
+              - { label: "Heading", name: "heading", widget: "markdown" }
               - { label: "Detail", name: "detail", widget: "markdown" }
               - { label: "Hero Image", name: "image", widget: "image", default: "/images/hero.svg" }
