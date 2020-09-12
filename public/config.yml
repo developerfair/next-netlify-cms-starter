@@ -50,3 +50,35 @@ collections:
                     - { label: "Image", name: "url", widget: "image" }
                     - { label: "Alt Text", name: "altText", widget: "string", required: false }
                     - { label: "Title", name: "title", widget: "string", required: false }
+            - label: 'Two Columns Images Right'
+              name: 'twoColsImageRight'
+              widget: 'object'
+              fields:
+                - { label: "Id", name: "id", widget: "string", default: "twoColsImageRight" }
+                - { label: "Header", name: "header", widget: "markdown", required: false }
+                - { label: "Sub Header", name: "subHeader", widget: "markdown", required: false }
+                - { label: "Detail", name: "detail", widget: "markdown", required: false }
+                - { label: "Footer", name: "footer", widget: "markdown", required: false }
+                - label: "Images"
+                  name: "images"
+                  widget: "list"
+                  fields:
+                    - { label: "Image", name: "url", widget: "image" }
+                    - { label: "Alt Text", name: "altText", widget: "string", required: false }
+                    - { label: "Title", name: "title", widget: "string", required: false }
+            - label: 'Two Columns Images Left'
+              name: 'twoColsImageLeft'
+              widget: 'object'
+              fields:
+                - { label: "Id", name: "id", widget: "string", default: "twoColsImageLeft" }
+                - { label: "Header", name: "header", widget: "markdown", required: false }
+                - { label: "Sub Header", name: "subHeader", widget: "markdown", required: false }
+                - { label: "Detail", name: "detail", widget: "markdown", required: false }
+                - { label: "Footer", name: "footer", widget: "markdown", required: false }
+                - label: "Images"
+                  name: "images"
+                  widget: "list"
+                  fields:
+                    - { label: "Image", name: "url", widget: "image" }
+                    - { label: "Alt Text", name: "altText", widget: "string", required: false }
+                    - { label: "Title", name: "title", widget: "string", required: false }

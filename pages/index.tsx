@@ -2,7 +2,9 @@ import { attributes } from "../content/index.md";
 import { Layout } from "../components/Layout";
 import React from "react";
 import { Hero, HeroProps } from "../components/Hero";
-import { FullWidth, FullWidthProps } from "../components/FullWidth";
+import { FullWidth, SectionProps } from "../components/FullWidth";
+import { TwoColsImagesLeft } from "../components/TwoColsImagesLeft";
+import { TwoColsImagesRight } from "../components/TwoColsImagesRight";
 
 type Props = {
   sections: any;
@@ -16,6 +18,10 @@ export default function Index({ sections = attributes.sections }: Props) {
             return <Hero key={index} {...section} />;
           case "fullWidth":
             return <FullWidth key={index} {...section} />;
+          case "twoColsImageLeft":
+            return <TwoColsImagesLeft key={index} {...section} />;
+          case "twoColsImageRight":
+            return <TwoColsImagesRight key={index} {...section} />;
           default:
             return null;
         }

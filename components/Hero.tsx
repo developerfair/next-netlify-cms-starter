@@ -26,7 +26,7 @@ export const Hero: React.FC<HeroProps> = ({
   video,
   footer,
 }) => (
-  <div className="mt-8 ml-8 lg:grid lg:grid-cols-12 lg:gap-8">
+  <section className="mt-8 ml-8 lg:grid lg:grid-cols-12 lg:gap-8">
     <div className="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
       <h2 className="mt-1 text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:leading-none sm:text-6xl lg:text-5xl xl:text-6xl">
         <Markdown>{header}</Markdown>
@@ -40,5 +40,5 @@ export const Hero: React.FC<HeroProps> = ({
         <img className="w-full" src={image.url} alt="Hero" />
       </div>
     </div>
-  </div>
+  </section>
 );
