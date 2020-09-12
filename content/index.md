@@ -50,4 +50,31 @@ sections:
       - url: /images/right-people.svg
         altText: Right People
         title: RIght People
+  - type: cardSection
+    id: cardSection
+    header: devfair is the home for your software
+    image:
+      url: /images/benefit.svg
+      altText: Benefit
+      title: Benefit
+    cards:
+      - image:
+          url: /images/infrastructure.svg
+          altText: Infrastructure
+          title: Infrastructure
+        header: Your software infrastructure flows through devfair.
+        detail: Connect all your vital software utilities like your cloud hosting
+          provider, git repository and more. See the key info in one place and
+          manage costs.
+      - header: Your software assets live inside devfair.
+        detail: From your code, to your prototypes and documentation - know it is all
+          nestled in one secure place. Easy to find and keep track of.
+        image:
+          url: /images/software-assets.svg
+          altText: Software Assets
+          title: Software Assets
+    images:
+      - url: /images/benefit.svg
+        altText: Benefit
+        title: Benefit
 ---

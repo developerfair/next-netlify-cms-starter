@@ -20,29 +20,30 @@ collections:
             - label: 'Hero'
               name: 'hero'
               widget: 'object'
+              collapsed: true
               fields:
                 - { label: "Id", name: "id", widget: "string", default: "hero" }
-                - { label: "Header", name: "header", widget: "markdown", required: false }
-                - { label: "Sub Header", name: "subHeader", widget: "markdown", required: false }
-                - { label: "Detail", name: "detail", widget: "markdown", required: false }
+                - { label: "Header", name: "header", widget: "markdown", minimal: true, required: false }
+                - { label: "Sub Header", name: "subHeader", widget: "markdown", minimal: true, required: false }
+                - { label: "Detail", name: "detail", widget: "markdown", minimal: true, required: false }
                 - label: "Hero Image"
                   name: "image"
                   widget: "object"
+                  collapsed: true
                   fields:
                     - { label: "Image", name: "url", widget: "image" }
                     - { label: "Alt Text", name: "altText", widget: "string", required: false }
                     - { label: "Title", name: "title", widget: "string", required: false }
                 - { label: "Hero Video", name: "video", widget: "string", required: false }
-                - { label: "Footer", name: "footer", widget: "markdown", required: false }
+                - { label: "Footer", name: "footer", widget: "markdown", minimal: true, required: false }
             - label: 'Full Width'
               name: 'fullWidth'
               widget: 'object'
               fields:
                 - { label: "Id", name: "id", widget: "string", default: "fullWidth" }
-                - { label: "Header", name: "header", widget: "markdown", required: false }
-                - { label: "Sub Header", name: "subHeader", widget: "markdown", required: false }
-                - { label: "Detail", name: "detail", widget: "markdown", required: false }
-                - { label: "Footer", name: "footer", widget: "markdown", required: false }
+                - { label: "Header", name: "header", widget: "markdown", minimal: true, required: false }
+                - { label: "Sub Header", name: "subHeader", widget: "markdown", minimal: true, required: false }
+                - { label: "Detail", name: "detail", widget: "markdown", minimal: true, required: false }
                 - label: "Images"
                   name: "images"
                   widget: "list"
@@ -50,15 +51,16 @@ collections:
                     - { label: "Image", name: "url", widget: "image" }
                     - { label: "Alt Text", name: "altText", widget: "string", required: false }
                     - { label: "Title", name: "title", widget: "string", required: false }
+                - { label: "Footer", name: "footer", widget: "markdown", minimal: true, required: false }
             - label: 'Two Columns Images Right'
               name: 'twoColsImageRight'
               widget: 'object'
+              collapsed: true
               fields:
                 - { label: "Id", name: "id", widget: "string", default: "twoColsImageRight" }
-                - { label: "Header", name: "header", widget: "markdown", required: false }
-                - { label: "Sub Header", name: "subHeader", widget: "markdown", required: false }
-                - { label: "Detail", name: "detail", widget: "markdown", required: false }
-                - { label: "Footer", name: "footer", widget: "markdown", required: false }
+                - { label: "Header", name: "header", widget: "markdown", minimal: true, required: false }
+                - { label: "Sub Header", name: "subHeader", widget: "markdown", minimal: true, required: false }
+                - { label: "Detail", name: "detail", widget: "markdown", minimal: true, required: false }
                 - label: "Images"
                   name: "images"
                   widget: "list"
@@ -66,15 +68,16 @@ collections:
                     - { label: "Image", name: "url", widget: "image" }
                     - { label: "Alt Text", name: "altText", widget: "string", required: false }
                     - { label: "Title", name: "title", widget: "string", required: false }
+                - { label: "Footer", name: "footer", widget: "markdown", minimal: true, required: false }
             - label: 'Two Columns Images Left'
               name: 'twoColsImageLeft'
               widget: 'object'
+              collapsed: true
               fields:
                 - { label: "Id", name: "id", widget: "string", default: "twoColsImageLeft" }
-                - { label: "Header", name: "header", widget: "markdown", required: false }
-                - { label: "Sub Header", name: "subHeader", widget: "markdown", required: false }
-                - { label: "Detail", name: "detail", widget: "markdown", required: false }
-                - { label: "Footer", name: "footer", widget: "markdown", required: false }
+                - { label: "Header", name: "header", widget: "markdown", minimal: true, required: false }
+                - { label: "Sub Header", name: "subHeader", widget: "markdown", minimal: true, required: false }
+                - { label: "Detail", name: "detail", widget: "markdown", minimal: true, required: false }
                 - label: "Images"
                   name: "images"
                   widget: "list"
@@ -82,3 +85,60 @@ collections:
                     - { label: "Image", name: "url", widget: "image" }
                     - { label: "Alt Text", name: "altText", widget: "string", required: false }
                     - { label: "Title", name: "title", widget: "string", required: false }
+                - { label: "Footer", name: "footer", widget: "markdown", minimal: true, required: false }
+            - label: 'Card Section'
+              name: 'cardSection'
+              widget: 'object'
+              collapsed: true
+              fields:
+                - { label: "Id", name: "id", widget: "string", default: "cardSection" }
+                - { label: "Header", name: "header", widget: "markdown", minimal: true, required: false }
+                - { label: "Sub Header", name: "subHeader", widget: "markdown", minimal: true, required: false }
+                - { label: "Detail", name: "detail", widget: "markdown", minimal: true, required: false }
+                - label: "Images"
+                  name: "images"
+                  widget: "list"
+                  fields:
+                    - { label: "Image", name: "url", widget: "image" }
+                    - { label: "Alt Text", name: "altText", widget: "string", required: false }
+                    - { label: "Title", name: "title", widget: "string", required: false }
+                - label: "Cards"
+                  name: "cards"
+                  widget: "list"
+                  fields:
+                  - label: "Image"
+                    name: "image"
+                    widget: "object"
+                    collapsed: true
+                    fields:
+                      - { label: "Image", name: "url", widget: "image" }
+                      - { label: "Alt Text", name: "altText", widget: "string", required: false }
+                      - { label: "Title", name: "title", widget: "string", required: false }
+                  - { label: "Header", name: "header", widget: "markdown", minimal: true, required: false }
+                  - { label: "Sub Header", name: "subHeader", widget: "markdown", minimal: true, required: false }
+                  - { label: "Detail", name: "detail", widget: "markdown", minimal: true, required: false }
+                  - label: 'Footer'
+                    name: 'footer'
+                    widget: 'object'
+                    collapsed: true
+                    fields:
+                      - { label: "Detail", name: "detail", widget: "markdown", minimal: true, required: false }
+                      - label: 'Link'
+                        name: 'link'
+                        widget: 'object'
+                        fields:
+                          - { label: "Title", name: "title", widget: "string", required: false }
+                          - { label: "Url", name: "url", widget: "string", required: false }
+                - label: 'Footer'
+                  name: 'footer'
+                  widget: 'object'
+                  collapsed: true
+                  fields:
+                    - { label: "Detail", name: "detail", widget: "markdown", minimal: true, required: false }
+                    - label: 'Link'
+                      name: 'link'
+                      widget: 'object'
+                      collapsed: true
+                      fields:
+                        - { label: "Title", name: "title", widget: "string", required: false }
+                        - { label: "Url", name: "url", widget: "string", required: false }
