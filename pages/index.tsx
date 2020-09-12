@@ -5,7 +5,7 @@ import { Hero, HeroProps } from "../components/Hero";
 import { FullWidth, FullWidthProps } from "../components/FullWidth";
 
 type Props = {
-  sections: HeroProps[] | FullWidthProps[];
+  sections: any;
 };
 export default function Index({ sections = attributes.sections }: Props) {
   return (

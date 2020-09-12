@@ -7,7 +7,7 @@ sections:
     image:
       altText: Developer Meeting
       title: Developer Meeting
-      url: /images/hero.jpg
+      url: /images/hero.svg
     detail: Work with professional software developers and scrum masters to make
       your project a reality. Minimise risk, cost and time compared to
       traditional development. Have complete control and insight into your
