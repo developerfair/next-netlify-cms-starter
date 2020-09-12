@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "generate-admin-css": "npx tailwindcss build styles/tailwind.css -o public/admin/main.css",
-    "export": "yarn generate-admin-css && yarn build && next export"
+    "export": "yarn generate-admin-css && yarn build && next export",
+    "local-server": "npx netlify-cms-proxy-server"
   },
   "dependencies": {
     "markdown-to-jsx": "^7.0.0",
