@@ -13,11 +13,40 @@ collections:
         name: "index"
         file: "content/index.md"
         fields:
-          - label: "Hero"
-            name: "hero"
-            widget: "object"
-            collapsed: false
-            fields:
-              - { label: "Heading", name: "heading", widget: "markdown" }
-              - { label: "Detail", name: "detail", widget: "markdown" }
-              - { label: "Hero Image", name: "image", widget: "image", default: "/images/hero.svg" }
+        - label: 'Sections'
+          name: 'sections'
+          widget: 'list'
+          types:
+            - label: 'Hero'
+              name: 'hero'
+              widget: 'object'
+              fields:
+                - { label: "Id", name: "id", widget: "string", default: "hero" }
+                - { label: "Header", name: "header", widget: "markdown", required: false }
+                - { label: "Sub Header", name: "subHeader", widget: "markdown", required: false }
+                - { label: "Detail", name: "detail", widget: "markdown", required: false }
+                - label: "Hero Image"
+                  name: "image"
+                  widget: "object"
+                  fields:
+                    - { label: "Image", name: "url", widget: "image" }
+                    - { label: "Alt Text", name: "altText", widget: "string", required: false }
+                    - { label: "Title", name: "title", widget: "string", required: false }
+                - { label: "Hero Video", name: "video", widget: "string", required: false }
+                - { label: "Footer", name: "footer", widget: "markdown", required: false }
+            - label: 'Full Width'
+              name: 'fullWidth'
+              widget: 'object'
+              fields:
+                - { label: "Id", name: "id", widget: "string", default: "fullWidth" }
+                - { label: "Header", name: "header", widget: "markdown", required: false }
+                - { label: "Sub Header", name: "subHeader", widget: "markdown", required: false }
+                - { label: "Detail", name: "detail", widget: "markdown", required: false }
+                - { label: "Footer", name: "footer", widget: "markdown", required: false }
+                - label: "Images"
+                  name: "images"
+                  widget: "list"
+                  fields:
+                    - { label: "Image", name: "url", widget: "image" }
+                    - { label: "Alt Text", name: "altText", widget: "string", required: false }
+                    - { label: "Title", name: "title", widget: "string", required: false }

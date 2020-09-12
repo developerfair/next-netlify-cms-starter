@@ -5,7 +5,7 @@ export const IndexPreview = ({ entry }) => {
   const data = entry.getIn(["data"]).toJS();
 
   if (data) {
-    return <Index hero={data.hero} />;
+    return <Index sections={data.sections} />;
   } else {
     return <div>Loading...</div>;
   }
