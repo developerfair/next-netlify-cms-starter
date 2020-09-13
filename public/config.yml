@@ -6,6 +6,18 @@ media_folder: public/images
 public_folder: /images
 logo_url: /images/devfair-logo.svg
 collections:
+  - name: "header"
+    label: "Header"
+    editor:
+      preview: false
+    files:
+      - label: "Header"
+        name: "header"
+        file: "content/header.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Logo", name: "logo", widget: "image" }
   - name: "pages"
     label: "Pages"
     files:
@@ -142,3 +154,24 @@ collections:
                       fields:
                         - { label: "Title", name: "title", widget: "string", required: false }
                         - { label: "Url", name: "url", widget: "string", required: false }
+  - name: "footer"
+    label: "Footer"
+    editor:
+      preview: false
+    files:
+      - label: "Footer"
+        name: "footer"
+        file: "content/footer.md"
+        fields:
+          - { label: "Header", name: "header", widget: "markdown", minimal: true, required: false }
+          - { label: "Description", name: "description", widget: "markdown", minimal: true, required: false }
+          - { label: "Logo", name: "logo", widget: "image" }
+          - { label: "Twitter", name: "twitter", widget: "string", required: false }
+          - { label: "Github", name: "github", widget: "string", required: false }
+          - { label: "Copyright", name: "copyright", widget: "markdown", minimal: true, required: false }
+          - label: 'Links'
+            name: 'links'
+            widget: 'list'
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Url", name: "url", widget: "string", required: false }
