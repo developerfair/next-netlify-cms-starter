@@ -20,7 +20,7 @@ export const FullWidth: React.FC<SectionProps> = ({
   images,
   footer,
 }) => (
-  <section className="flex flex-wrap flex-row w-full items-start justify-center mt-8">
+  <section className="flex flex-wrap flex-row w-full items-start justify-center mt-8 bg-brand-bg">
     <h2 className="text-4xl md:text-5xl font-extrabold leading-tight text-brand-color mb-8">
       <Markdown>{header}</Markdown>
     </h2>
