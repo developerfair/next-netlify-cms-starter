@@ -65,7 +65,7 @@ const Card = ({ image, header, subHeader, detail, footer }: CardProps) => {
     <div className="feature md:border-gray-200 border md:border-b sm:p-4 bg-white items-center h-full hover:border-brand-color transition-colors duration-300">
       <div className="flex flex-col lg:flex-row flex-no-wrap">
         <span className="flex justify-center items-start lg:items-center flex-shrink-0 py-4">
-          <img src={image.url} alt={image.altText} className="w-24 h-24" />
+          <img src={image?.url} alt={image?.altText} className="w-24 h-24" />
         </span>
         <div className="flex w-full flex-col p-4 lg:py-4 lg:px-6">
           <h3 className="flex font-semibold items-center flex-no-wrap w-full text-brand-800 mb-2">
