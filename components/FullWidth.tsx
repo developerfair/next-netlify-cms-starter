@@ -20,10 +20,15 @@ export const FullWidth: React.FC<SectionProps> = ({
   images,
   footer,
 }) => (
-  <section className="flex flex-wrap flex-row w-full items-start justify-center mt-8 bg-brand-bg p-4">
+  <section className="flex flex-col w-full items-start justify-center mt-8 bg-brand-bg p-4">
     <h2 className="text-4xl md:text-5xl font-extrabold leading-tight text-brand-color mb-8">
       <Markdown>{header}</Markdown>
     </h2>
+    {subHeader && (
+      <h4 className="text-2xl md:text-3xl leading-tight text-brand-color mb-8">
+        <Markdown>{subHeader}</Markdown>
+      </h4>
+    )}
     {images?.length > 0 && (
       <img
         src={images[0].url}
@@ -34,5 +39,6 @@ export const FullWidth: React.FC<SectionProps> = ({
     <div className="text-lg lg:text-xl text-brand-text-gray py-6">
       <span>{detail}</span>
     </div>
+    <Markdown>{footer}</Markdown>
   </section>
 );
