@@ -26,13 +26,6 @@ collections:
         fields:
           - { label: "Logo", name: "logo", widget: "image" }
           - { label: "Header", name: "header", widget: "markdown", minimal: true, required: false }
-          - label: 'Call to Action Button'
-            name: 'cta'
-            widget: 'object'
-            collapsed: true
-            fields:
-              - { label: "Title", name: "title", widget: "string", required: false }
-              - { label: "Url", name: "url", widget: "string", required: false }
           - label: 'Menu'
             name: 'menu'
             widget: 'list'
@@ -45,6 +38,13 @@ collections:
                 fields:
                   - { label: "Title", name: "title", widget: "string", required: false }
                   - { label: "Url", name: "url", widget: "string", required: false }
+          - label: 'Call to Action Button'
+            name: 'cta'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Url", name: "url", widget: "string", required: false }
   - name: "pages"
     label: "Pages"
     files:
