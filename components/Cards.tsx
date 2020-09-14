@@ -49,13 +49,15 @@ export const Cards: React.FC<SectionProps & { cards: CardProps[] }> = ({
           />
         )}
       </div>
-      <div className="mx-auto max-w-screen-xl pb-8 sm:pb-0 lg:px-6">
-        <div className="py-4 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:items-stretch scrollTrigger">
-          {cards.map((card, index) => (
-            <Card {...card} key={index} />
-          ))}
+      {cards && (
+        <div className="mx-auto max-w-screen-xl pb-8 sm:pb-0 lg:px-6">
+          <div className="py-4 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:items-stretch scrollTrigger">
+            {cards.map((card, index) => (
+              <Card {...card} key={index} />
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   </section>
 );
