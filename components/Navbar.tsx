@@ -91,6 +91,51 @@ export const Navbar = ({ data }: Props) => {
               ))}
             </div>
           </div>
+
+          <div className="hidden md:ml-4 md:flex-shrink-0 md:flex md:items-center">
+            <div className="ml-3 relative">
+              {/*
+              Profile dropdown panel, show/hide based on dropdown state.
+
+              Entering: "transition ease-out duration-200"
+              From: "transform opacity-0 scale-95"
+              To: "transform opacity-100 scale-100"
+              Leaving: "transition ease-in duration-75"
+              From: "transform opacity-100 scale-100"
+              To: "transform opacity-0 scale-95"
+              */}
+              <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg">
+                <div
+                  className="py-1 rounded-md bg-white shadow-xs"
+                  role="menu"
+                  aria-orientation="vertical"
+                  aria-labelledby="user-menu"
+                >
+                  <a
+                    href="#"
+                    className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
+                    role="menuitem"
+                  >
+                    Your Profile
+                  </a>
+                  <a
+                    href="#"
+                    className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
+                    role="menuitem"
+                  >
+                    Settings
+                  </a>
+                  <a
+                    href="#"
+                    className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
+                    role="menuitem"
+                  >
+                    Sign out
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           {cta && (
             <div className="flex items-center">
               <div className="flex-shrink-0">

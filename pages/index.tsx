@@ -1,8 +1,8 @@
 import { attributes } from "../content/index.md";
 import { Layout } from "../components/Layout";
 import React from "react";
-import { Hero, HeroProps } from "../components/Hero";
-import { FullWidth, SectionProps } from "../components/FullWidth";
+import { Hero } from "../components/Hero";
+import { FullWidth } from "../components/FullWidth";
 import { TwoColsImagesLeft } from "../components/TwoColsImagesLeft";
 import { TwoColsImagesRight } from "../components/TwoColsImagesRight";
 import { Cards } from "../components/Cards";

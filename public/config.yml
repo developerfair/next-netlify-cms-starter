@@ -193,3 +193,14 @@ collections:
           - { label: "Twitter", name: "twitter", widget: "string", required: false }
           - { label: "Github", name: "github", widget: "string", required: false }
           - { label: "Copyright", name: "copyright", widget: "markdown", minimal: true, required: false }
+  - label: "Blog"
+    name: "blog"
+    folder: "content/blog/posts"
+    label_singular: "Blog Post"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "featureImage", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
