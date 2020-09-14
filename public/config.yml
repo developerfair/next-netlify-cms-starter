@@ -6,18 +6,45 @@ media_folder: public/images
 public_folder: /images
 logo_url: /images/devfair-logo.svg
 collections:
-  - name: "header"
-    label: "Header"
+  - name: "settings"
+    label: "Site Settings"
     editor:
       preview: false
     files:
-      - label: "Header"
-        name: "header"
-        file: "content/header.md"
+      - label: "Site Settings"
+        name: "settings"
+        file: "content/settings.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
+  - name: "navbar"
+    label: "Navbar"
+    files:
+      - label: "Navbar"
+        name: "navbar"
+        file: "content/navbar.md"
+        fields:
           - { label: "Logo", name: "logo", widget: "image" }
+          - { label: "Header", name: "header", widget: "markdown", minimal: true, required: false }
+          - label: 'Call to Action Button'
+            name: 'cta'
+            widget: 'object'
+            collapsed: true
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Url", name: "url", widget: "string", required: false }
+          - label: 'Menu'
+            name: 'menu'
+            widget: 'list'
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Url", name: "url", widget: "string", required: false }
+              - label: 'Sub Menu'
+                name: 'subMenu'
+                widget: 'list'
+                fields:
+                  - { label: "Title", name: "title", widget: "string", required: false }
+                  - { label: "Url", name: "url", widget: "string", required: false }
   - name: "pages"
     label: "Pages"
     files:
@@ -156,8 +183,6 @@ collections:
                         - { label: "Url", name: "url", widget: "string", required: false }
   - name: "footer"
     label: "Footer"
-    editor:
-      preview: false
     files:
       - label: "Footer"
         name: "footer"
@@ -165,13 +190,6 @@ collections:
         fields:
           - { label: "Header", name: "header", widget: "markdown", minimal: true, required: false }
           - { label: "Description", name: "description", widget: "markdown", minimal: true, required: false }
-          - { label: "Logo", name: "logo", widget: "image" }
           - { label: "Twitter", name: "twitter", widget: "string", required: false }
           - { label: "Github", name: "github", widget: "string", required: false }
           - { label: "Copyright", name: "copyright", widget: "markdown", minimal: true, required: false }
-          - label: 'Links'
-            name: 'links'
-            widget: 'list'
-            fields:
-              - { label: "Title", name: "title", widget: "string", required: false }
-              - { label: "Url", name: "url", widget: "string", required: false }

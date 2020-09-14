@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { attributes } from "../content/header.md";
+import { attributes } from "../content/settings.md";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 
