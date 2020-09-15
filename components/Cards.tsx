@@ -52,7 +52,7 @@ export const Cards: React.FC<SectionProps & { cards: CardProps[] }> = ({
       {cards && (
         <div className="mx-auto max-w-screen-xl pb-8 sm:pb-0 lg:px-6">
           <div className="py-4 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:items-stretch scrollTrigger">
-            {cards.map((card, index) => (
+            {cards?.map((card, index) => (
               <Card {...card} key={index} />
             ))}
           </div>
