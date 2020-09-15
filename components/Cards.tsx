@@ -43,9 +43,9 @@ export const Cards: React.FC<SectionProps & { cards: CardProps[] }> = ({
 
         {images?.length > 0 && (
           <img
-            src={images[0].url}
+            src={images[0]?.url}
             className="my-8 mx-auto w-80"
-            alt={images[0].altText}
+            alt={images[0]?.altText}
           />
         )}
       </div>

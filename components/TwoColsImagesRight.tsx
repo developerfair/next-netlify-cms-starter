@@ -25,9 +25,9 @@ export const TwoColsImagesRight: React.FC<SectionProps> = ({
       <div className="w-1/4">
         {images?.length > 0 && (
           <img
-            src={images[0].url}
+            src={images[0]?.url}
             className="w-full h-48 lg:h-60"
-            alt={images[0].altText}
+            alt={images[0]?.altText}
           />
         )}
       </div>

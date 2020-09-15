@@ -31,9 +31,9 @@ export const FullWidth: React.FC<SectionProps> = ({
     )}
     {images?.length > 0 && (
       <img
-        src={images[0].url}
+        src={images[0]?.url}
         className="w-full h-48 lg:h-60"
-        alt={images[0].altText}
+        alt={images[0]?.altText}
       />
     )}
     <div className="text-lg lg:text-xl text-brand-text-gray py-6">
